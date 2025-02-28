@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Payoo App</title>
+  </head>
+  <body>
+    <section class="login_page_main_section">
+      <div class="login_content_main_container">
+        <div class="login_image_container">
+          <img src="./assets/bg.png" alt="Image" />
+          <img id="login_center_image" src="./assets/Group.png" alt="Image" />
+        </div>
+        <form>
+          <div class="login_form_container">
+            <h2>Account Number</h2>
+            <input
+              id="account_number"
+              type="text"
+              name="number"
+              required
+              placeholder="Enter your number"
+            />
+            <h2>4 Digit Pin</h2>
+            <input
+              id="pin_number"
+              type="password"
+              name="password"
+              required
+              placeholder="Enter 4 Digit Pin"
+            />
+            <br />
+            <button type="submit" onclick="handleLogin(event)">Login</button>
+            <div id="error_massage_conainer"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
